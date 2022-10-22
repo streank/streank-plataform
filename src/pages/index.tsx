@@ -1,7 +1,8 @@
 import type { NextPage } from "next";
+import Feed from "./Feed";
 
 const Home: NextPage = () => {
-  return <h1>hello word</h1>;
+  return <Feed />;
 };
 
 export default Home;

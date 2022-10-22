@@ -1,7 +1,13 @@
+import { Flex } from "@chakra-ui/react";
 import type { NextPage } from "next";
+import { Header } from "../../components/Header";
 
 const Feed: NextPage = () => {
-  return <h1>home 2</h1>;
+  return (
+    <Flex justifyContent="center" flexDir="column">
+      <Header />
+    </Flex>
+  );
 };
 
 export default Feed;

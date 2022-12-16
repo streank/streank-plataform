@@ -2,16 +2,24 @@ import { Avatar, Flex, Stack, StackDivider, Text, Wrap, WrapItem } from "@chakra
 
 export function AvatarDescription() {
     return (
-        <Flex alignItems={"center"}>
-            <Wrap >
-                <WrapItem padding={"10px"}>
-                    <Avatar showBorder borderColor={"#0c051f"} size='xl' name='Dan Abrahmov' src='https://bit.ly/dan-abramov' />
+        <Flex alignItems={"center"} maxWidth="70rem">
+            <Wrap>
+                <WrapItem padding={"20px"}>
+                    <Avatar marginRight={"230px"}
+                        showBorder
+                        borderColor={"#0c051f"}
+                        size='2xl' name='AvatarDescription'
+                        src='https://bit.ly/dan-abramov' />
                 </WrapItem>
             </Wrap>
 
-            <Stack spacing={1}>
+            <Stack spacing={1} >
                 <Text fontSize='2xl' fontWeight={"bold"}>Nome de usuário</Text>
-                <Text fontSize='md'> Lorem ipsum dolor sit amet consectetur adipisicing elit. </Text>
+                <Text fontSize='md' noOfLines={[1, 2, 3]}>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem,
+                    ipsum dolor sit amet consectetur adipisicing elit. Nisi itaque magnam reprehenderit,
+                    et animi illo molestias ipsam, reiciendis commodi exercitationem harum, veniam corrupti
+                    qui modi libero dignissimos explicabo similique cum? </Text>
             </Stack>
         </Flex>
     )

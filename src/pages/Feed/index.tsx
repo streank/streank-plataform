@@ -4,6 +4,7 @@ import { AvatarDescription } from "../../components/AvatarDescription";
 import { Follow } from "../../components/Follow";
 import { Header } from "../../components/Header";
 import { Banner } from "../../components/Banner";
+import { Filter } from "../../components/Filter";
 
 
 const Feed: NextPage = () => {
@@ -11,10 +12,14 @@ const Feed: NextPage = () => {
     <Flex justifyContent="center" flexDir="column">
       <Header />
       <Banner />
+
       <Flex >
         <AvatarDescription />
         <Follow />
       </Flex>
+
+      <Filter />
+
     </Flex>
   );
 };

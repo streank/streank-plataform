@@ -4,12 +4,12 @@ import { Tabs, TabList, TabPanels, Tab, TabPanel, Flex, Text } from '@chakra-ui/
 export function Filter() {
     return (
         <Flex justifyContent={"center"}>
-            <Tabs variant='solid-rounded' colorScheme={"#0c051f"}>
+            <Tabs size={"lg"} variant='solid-rounded' colorScheme={"#0c051f"}>
                 <TabList background={"#0c051f"} borderRadius={"100px"} color={"orange.400"}>
-                    <Tab fontWeight={"bold"} color={"orange.400"}>Postagens </Tab> <Text alignSelf={"center"}>|</Text>
-                    <Tab fontWeight={"bold"} color={"orange.400"}>Fotos</Tab> <Text alignSelf={"center"}>|</Text>
-                    <Tab fontWeight={"bold"} color={"orange.400"}>Vídeos</Tab> <Text alignSelf={"center"}>|</Text>
-                    <Tab fontWeight={"bold"} color={"orange.400"}>Lives</Tab>
+                    <Tab _hover={{color: "#50577A"}} fontWeight={"bold"} color={"orange.400"}>Postagens </Tab> <Text alignSelf={"center"}>|</Text>
+                    <Tab _hover={{color: "#50577A"}} fontWeight={"bold"} color={"orange.400"}>Fotos</Tab> <Text alignSelf={"center"}>|</Text>
+                    <Tab _hover={{color: "#50577A"}} fontWeight={"bold"} color={"orange.400"}>Vídeos</Tab> <Text alignSelf={"center"}>|</Text>
+                    <Tab _hover={{color: "#50577A"}} fontWeight={"bold"} color={"orange.400"}>Lives</Tab>
                 </TabList>
 
                 <TabPanels>

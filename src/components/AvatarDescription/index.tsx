@@ -4,11 +4,12 @@ export function AvatarDescription() {
     return (
         <Flex alignItems={"center"} maxWidth="70rem">
             <Wrap>
-                <WrapItem padding={"20px"}>
+                <WrapItem padding={"20px"} minWidth={'40rem'}>
                     <Avatar marginRight={"230px"}
                         showBorder
                         borderColor={"#0c051f"}
                         size='2xl' name='AvatarDescription'
+                        
                         src='https://bit.ly/dan-abramov' />
                 </WrapItem>
             </Wrap>

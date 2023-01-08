@@ -7,6 +7,7 @@ import {
   Flex,
   Text,
 } from "@chakra-ui/react";
+import { Post } from "../Post/indetx";
 
 export function Filter() {
   return (
@@ -55,7 +56,7 @@ export function Filter() {
 
         <TabPanels>
           <TabPanel bg="purple.300">
-            <p>Em construção! (Postagens)</p>
+            <Post />
           </TabPanel>
           <TabPanel bg="purple.600">
             <p>Em construção! (Fotos)</p>

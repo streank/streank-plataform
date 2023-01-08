@@ -2,22 +2,23 @@ import { Avatar, Flex, Stack, Text, Wrap, WrapItem } from "@chakra-ui/react";
 
 export function AvatarDescription() {
   return (
-    <Flex alignItems="center" maxWidth="70rem">
-      <Wrap>
-        <WrapItem padding="20px" minWidth="40rem">
-          <Avatar
-            marginRight="230px"
-            showBorder
-            borderColor="#0c051f"
-            size="2xl"
-            name="AvatarDescription"
-            src="https://bit.ly/dan-abramov"
-          />
-        </WrapItem>
-      </Wrap>
+    <Flex alignItems="center" w="100%">
+      <Flex padding="1rem">
+        <Avatar
+          showBorder
+          borderColor="#0c051f"
+          size="2xl"
+          name="AvatarDescription"
+          src="https://bit.ly/dan-abramov"
+        />
+      </Flex>
 
       <Stack spacing={1}>
-        <Flex justifyContent="space-between" alignItems="center">
+        <Flex
+          justifyContent={{ base: "start", md: "start", xl: "space-between" }}
+          alignItems={{ base: "start", md: "start", xl: "center" }}
+          flexDirection={{ base: "column", md: "column", xl: "row" }}
+        >
           <Text fontSize="2xl" fontWeight="bold">
             Nome de usuário
           </Text>

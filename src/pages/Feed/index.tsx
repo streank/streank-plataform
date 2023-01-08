@@ -11,7 +11,7 @@ const Feed: NextPage = () => {
       <Header />
       <Banner />
 
-      <Flex w="1232px" h="auto">
+      <Flex w="90%" h="auto">
         <AvatarDescription />
       </Flex>
 

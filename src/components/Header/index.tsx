@@ -8,6 +8,7 @@ export const Header = () => {
       justifyContent="space-between"
       alignItems="center"
       padding="0.5rem"
+      w="100%"
     >
       <Image src="/image/logo.svg" alt="logo" objectFit="cover" width="160px" />
 

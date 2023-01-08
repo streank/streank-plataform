@@ -1,25 +1,21 @@
 import { Flex } from "@chakra-ui/react";
 import type { NextPage } from "next";
 import { AvatarDescription } from "../../components/AvatarDescription";
-import { Follow } from "../../components/Follow";
 import { Header } from "../../components/Header";
 import { Banner } from "../../components/Banner";
 import { Filter } from "../../components/Filter";
 
-
 const Feed: NextPage = () => {
   return (
-    <Flex justifyContent="center" flexDir="column">
+    <Flex flexDir="column" h="100vh" alignItems="center" w="100%">
       <Header />
       <Banner />
 
-      <Flex >
+      <Flex w="1232px" h="auto">
         <AvatarDescription />
-        <Follow />
       </Flex>
 
       <Filter />
-
     </Flex>
   );
 };

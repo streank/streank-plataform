@@ -5,6 +5,8 @@ export function Banner() {
     <Flex blockSize="20rem" width="96%" alignSelf="center">
       <Image src="/image/header.png" alt="Header" />
       {/* silence is golden */}
+
+      {/* the speak is steel */}
     </Flex>
   );
 }

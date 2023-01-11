@@ -8,7 +8,6 @@ import { Filter } from "../../components/Filter";
 const Feed: NextPage = () => {
   return (
     <Flex flexDir="column" h="100vh" alignItems="center" w="100%">
-      <Header />
       <Banner />
 
       <Flex w="90%" h="auto">

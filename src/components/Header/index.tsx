@@ -1,6 +1,6 @@
 import { Flex, Image, AvatarGroup, Avatar, Heading } from "@chakra-ui/react";
 import { useState } from "react";
-
+import { ButtonW } from "../Button";
 
 export const Header = () => {
   const [users, setUsers] = useState([{
@@ -11,33 +11,30 @@ export const Header = () => {
 
   return (
     <Flex
-      bg="#000130">
-      <Flex
-        display="flex"
-        justifyContent="space-between"
-        alignItems="center"
-        padding="0.5rem"
-        w="100%"
-      >
-        <Image src="/image/logo.svg" alt="logo" objectFit="cover" width="160px" />
-      </Flex>
+      bg="#000130"
+      display="flex"
+      justifyContent="space-between"
+      alignItems="center"
+      padding="0.5rem"
+      w="100%">
 
-      {users?.map((user) => (
+      <Image src="/image/logo.svg" alt="logo" objectFit="cover" width="160px" />
+      {/* <ButtonW title="login" bg="#9101f5" /> */}
 
-        <div key={user.id}>
-          <AvatarGroup>
-            <Avatar bg="gray.300" src={user.avatarImg} />
-          </AvatarGroup>
+      <Flex w={'25%'} justifyContent={'flex-end'} paddingRight={'2rem'}>
+        {users?.map((user) => (
+          <Flex key={user.id} alignItems={'center'}>
 
-          <Flex flexDirection='column' justifyContent='center'>
+            <AvatarGroup paddingRight={'1rem'}>
+              <Avatar src={user.avatarImg} />
+            </AvatarGroup>
 
             <Heading as='h2' size='sm' color='white'>
-              Olá,{user.name}
+              Olá, {user.name}!
             </Heading>
           </Flex>
-        </div>
-      ))}
-
+        ))}
+      </Flex>
     </Flex>
   );
 };

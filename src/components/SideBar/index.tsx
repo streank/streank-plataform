@@ -4,31 +4,31 @@ import { Accordion, AccordionItem, AccordionButton, AccordionPanel, AccordionIco
 export const SideBar = () => {
   return (
     <Flex
-      p={'20px'}
+      p={'30px'}
       flexDirection={"column"}
-      bg='#F5F5F5'
+      bg='#dbdbdb'
+      width={"100%"}
     >
-      <Flex flexDirection={'column'}>
+      <Flex flexDirection={'column'} marginTop={'3rem'} >
         <Stack>
-          <InputGroup>
+          <InputGroup variant={'none'}>
             <InputLeftElement
               pointerEvents='none'
-              children={<SearchIcon color='gray.300' />}
+              children={<SearchIcon color='white' />}
             />
-            <Input type='src'
+            <Input
+              type='src'
               placeholder='Pesquisa'
               textColor='white'
               background='#00002D'
-              htmlSize={14}
+              borderRadius={'8px'}
+              // htmlSize={14}
               width='auto' />
           </InputGroup>
         </Stack>
 
         <Flex flexDirection={'column'}>
-
           <Accordion defaultIndex={[0]} allowMultiple>
-
-
             <AccordionItem>
               <h2>
                 <AccordionButton _expanded={{ bg: '#9001F5', color: 'white' }}>
@@ -42,8 +42,6 @@ export const SideBar = () => {
                 Notifications
               </AccordionPanel>
             </AccordionItem>
-
-
 
             <AccordionItem>
               <h2>
@@ -63,7 +61,6 @@ export const SideBar = () => {
 
               </AccordionPanel>
             </AccordionItem>
-
             <AccordionItem>
               <h2>
                 <AccordionButton _expanded={{ bg: '#9001F5', color: 'white' }}>
@@ -77,7 +74,6 @@ export const SideBar = () => {
                 Communities
               </AccordionPanel>
             </AccordionItem>
-
           </Accordion>
 
 

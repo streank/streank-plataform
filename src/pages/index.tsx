@@ -8,16 +8,14 @@ const Home: NextPage = () => {
   return (
 
     <>
-      <Header/>
-    <Flex> 
-      <Flex bg='blue' w='18%' h='700px'> </Flex>     
-      
-      <Flex bg='GREEN' w='62%' h='700px'> <Feed/> </Flex>
-      
-      <Flex  w='20%' h='700px'>  <SideBar/> </Flex>
-    </Flex>
+      <Header />
+      <Flex>
+        <Flex w='15%' h='100vh'> <SideBar /> </Flex>
+        <Flex w='70%' h='100vh'> <Feed /> </Flex>
+        <Flex bg='gray' w='15%' h='100vh'> </Flex>
+      </Flex>
     </>
-    )
-  };
+  )
+};
 
 export default Home;

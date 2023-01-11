@@ -21,33 +21,33 @@ export function Filter() {
             color="orange.400"
           >
             <Tab
-              _hover={{ color: "#50577A" }}
+              _hover={{ color: "#4B00C2" }}
               fontWeight={"bold"}
-              color={"orange.400"}
+              color={"#9001F5"}
             >
               Postagens
             </Tab>
             <Text alignSelf="center">|</Text>
             <Tab
-              _hover={{ color: "#50577A" }}
+              _hover={{ color: "#4B00C2" }}
               fontWeight="bold"
-              color="orange.400"
+              color="#9001F5"
             >
               Fotos
             </Tab>
             <Text alignSelf="center">|</Text>
             <Tab
-              _hover={{ color: "#50577A" }}
+              _hover={{ color: "#4B00C2" }}
               fontWeight="bold"
-              color="orange.400"
+              color="#9001F5"
             >
               Vídeos
             </Tab>
             <Text alignSelf={"center"}>|</Text>
             <Tab
-              _hover={{ color: "#50577A" }}
+              _hover={{ color: "#4B00C2" }}
               fontWeight="bold"
-              color="orange.400"
+              color="#9001F5"
             >
               Lives
             </Tab>
